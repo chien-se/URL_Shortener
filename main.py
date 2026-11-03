@@ -85,5 +85,3 @@ def follow(code: str):
         raise HTTPException(404, "Short link not found")
     return RedirectResponse(row[0], status_code=302)
 
-chmod 400 ~/Downloads/your-key.pem
-ssh -i ~/Downloads/your-key.pem ubuntu@<public-ip>
